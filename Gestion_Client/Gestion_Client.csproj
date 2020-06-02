@@ -44,6 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connexion.cs" />
+    <Compile Include="Fconnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fconnexion.Designer.cs">
+      <DependentUpon>Fconnexion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +59,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Fconnexion.resx">
+      <DependentUpon>Fconnexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

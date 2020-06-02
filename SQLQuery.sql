@@ -1,5 +1,4 @@
-create database Gestion_Client
-use Gestion_Client
+create database Gestion_Employe
 
 create table Service (
 	Code varchar(20) primary key,
