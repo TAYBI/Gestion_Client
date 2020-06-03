@@ -59,8 +59,8 @@ namespace Gestion_Client
             cmd = new SqlCommand(req, con);
             da = new SqlDataAdapter(cmd);
 
-            da.Fill(ds);
-            dt = ds.Tables[req];
+            da.Fill(dt);
+            //dt = ds.Tables[req];
         }
 
 

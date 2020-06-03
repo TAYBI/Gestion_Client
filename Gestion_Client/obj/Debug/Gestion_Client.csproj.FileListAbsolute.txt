@@ -7,3 +7,4 @@ C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.cs
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.exe
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.pdb
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.FMenu.resources
+C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Fservice.resources

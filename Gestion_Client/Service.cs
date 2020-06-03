@@ -10,7 +10,7 @@ namespace Gestion_Client
     {
         private String code;
         private String libellé;
-        private Connexion con;   //objet  delaclasseconnexion
+        private Connexion con;   //objet  de la classe connexion
         
         //constructeur qui initialise la connexion seulement utilisé pour un select sans condition(where)
         public Service(Connexion con){
@@ -52,7 +52,7 @@ namespace Gestion_Client
         //qui a des employés
         public Boolean existence_employe()
         {
-            if (con.executer_valeur("select count(*) from Emplye where code_service = '" + code + "'") == "0")
+            if (con.executer_valeur("select count(*) from Employe where code_service = '" + code + "'") == "0")
                 return false;
             else
                 return true;
@@ -80,7 +80,7 @@ namespace Gestion_Client
 
         public void rechercher_code()
         {
-            con.executer_liste_deconnecte("SELECT * FROM Srevice WHERE code='" + code + "'");
+            con.executer_liste_deconnecte("SELECT * FROM Service WHERE code='" + code + "'");
         }
     }
 }

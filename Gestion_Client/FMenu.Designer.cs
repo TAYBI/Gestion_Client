@@ -57,6 +57,7 @@
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Gestion des services";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -107,7 +108,7 @@
             // 
             this.msg.AutoSize = true;
             this.msg.ForeColor = System.Drawing.Color.Green;
-            this.msg.Location = new System.Drawing.Point(77, 271);
+            this.msg.Location = new System.Drawing.Point(77, 268);
             this.msg.Name = "msg";
             this.msg.Size = new System.Drawing.Size(0, 13);
             this.msg.TabIndex = 16;
@@ -127,6 +128,7 @@
             this.Controls.Add(this.label3);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(316, 331);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(316, 331);
             this.Name = "FMenu";
             this.Text = "Form1";
