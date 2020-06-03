@@ -16,7 +16,7 @@ namespace Gestion_Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Fconnexion());
+            Application.Run(new FMenu());
         }
     }
 }
