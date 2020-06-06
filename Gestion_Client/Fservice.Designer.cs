@@ -29,42 +29,31 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.BtnEtat = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnModifier = new System.Windows.Forms.Button();
             this.BtnSupprimer = new System.Windows.Forms.Button();
+            this.DGV = new System.Windows.Forms.DataGridView();
+            this.Coode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libellé = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.msg = new System.Windows.Forms.Label();
+            this.BtnEtat = new System.Windows.Forms.Button();
             this.BtnAjouter = new System.Windows.Forms.Button();
             this.TxtCode = new System.Windows.Forms.TextBox();
             this.TxtLibelle = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtLibellefghf = new System.Windows.Forms.Label();
-            this.DGV = new System.Windows.Forms.DataGridView();
-            this.Coode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.libellé = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.msg = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(161, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 37);
+            this.label3.Size = new System.Drawing.Size(134, 39);
             this.label3.TabIndex = 8;
             this.label3.Text = "Service";
-            // 
-            // BtnEtat
-            // 
-            this.BtnEtat.BackColor = System.Drawing.Color.White;
-            this.BtnEtat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEtat.Location = new System.Drawing.Point(313, 76);
-            this.BtnEtat.Name = "BtnEtat";
-            this.BtnEtat.Size = new System.Drawing.Size(123, 37);
-            this.BtnEtat.TabIndex = 9;
-            this.BtnEtat.Text = "Etat";
-            this.BtnEtat.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -103,6 +92,58 @@
             this.BtnSupprimer.Text = "Supprimer";
             this.BtnSupprimer.UseVisualStyleBackColor = false;
             this.BtnSupprimer.Click += new System.EventHandler(this.BtnSupprimer_Click);
+            // 
+            // DGV
+            // 
+            this.DGV.AllowUserToAddRows = false;
+            this.DGV.AllowUserToDeleteRows = false;
+            this.DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Coode,
+            this.libellé});
+            this.DGV.Location = new System.Drawing.Point(28, 162);
+            this.DGV.Name = "DGV";
+            this.DGV.ReadOnly = true;
+            this.DGV.RowHeadersVisible = false;
+            this.DGV.RowHeadersWidth = 50;
+            this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV.Size = new System.Drawing.Size(273, 123);
+            this.DGV.TabIndex = 18;
+            // 
+            // Coode
+            // 
+            this.Coode.DataPropertyName = "Code";
+            this.Coode.HeaderText = "Code";
+            this.Coode.Name = "Coode";
+            this.Coode.ReadOnly = true;
+            // 
+            // libellé
+            // 
+            this.libellé.DataPropertyName = "libellé";
+            this.libellé.HeaderText = "libellé";
+            this.libellé.Name = "libellé";
+            this.libellé.ReadOnly = true;
+            // 
+            // msg
+            // 
+            this.msg.AutoSize = true;
+            this.msg.ForeColor = System.Drawing.Color.Green;
+            this.msg.Location = new System.Drawing.Point(179, 307);
+            this.msg.Name = "msg";
+            this.msg.Size = new System.Drawing.Size(0, 13);
+            this.msg.TabIndex = 19;
+            // 
+            // BtnEtat
+            // 
+            this.BtnEtat.BackColor = System.Drawing.Color.White;
+            this.BtnEtat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEtat.Location = new System.Drawing.Point(313, 76);
+            this.BtnEtat.Name = "BtnEtat";
+            this.BtnEtat.Size = new System.Drawing.Size(123, 37);
+            this.BtnEtat.TabIndex = 9;
+            this.BtnEtat.Text = "Etat";
+            this.BtnEtat.UseVisualStyleBackColor = false;
             // 
             // BtnAjouter
             // 
@@ -153,47 +194,6 @@
             this.TxtLibellefghf.TabIndex = 17;
             this.TxtLibellefghf.Text = "Libellé";
             // 
-            // DGV
-            // 
-            this.DGV.AllowUserToAddRows = false;
-            this.DGV.AllowUserToDeleteRows = false;
-            this.DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Coode,
-            this.libellé});
-            this.DGV.Location = new System.Drawing.Point(28, 162);
-            this.DGV.Name = "DGV";
-            this.DGV.ReadOnly = true;
-            this.DGV.RowHeadersVisible = false;
-            this.DGV.RowHeadersWidth = 50;
-            this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV.Size = new System.Drawing.Size(273, 123);
-            this.DGV.TabIndex = 18;
-            // 
-            // Coode
-            // 
-            this.Coode.DataPropertyName = "Code";
-            this.Coode.HeaderText = "Code";
-            this.Coode.Name = "Coode";
-            this.Coode.ReadOnly = true;
-            // 
-            // libellé
-            // 
-            this.libellé.DataPropertyName = "libellé";
-            this.libellé.HeaderText = "libellé";
-            this.libellé.Name = "libellé";
-            this.libellé.ReadOnly = true;
-            // 
-            // msg
-            // 
-            this.msg.AutoSize = true;
-            this.msg.ForeColor = System.Drawing.Color.Green;
-            this.msg.Location = new System.Drawing.Point(179, 307);
-            this.msg.Name = "msg";
-            this.msg.Size = new System.Drawing.Size(0, 13);
-            this.msg.TabIndex = 19;
-            // 
             // Fservice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,18 +228,18 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button BtnEtat;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnModifier;
         private System.Windows.Forms.Button BtnSupprimer;
+        private System.Windows.Forms.DataGridView DGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Coode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn libellé;
+        private System.Windows.Forms.Label msg;
+        private System.Windows.Forms.Button BtnEtat;
         private System.Windows.Forms.Button BtnAjouter;
         private System.Windows.Forms.TextBox TxtCode;
         private System.Windows.Forms.TextBox TxtLibelle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label TxtLibellefghf;
-        private System.Windows.Forms.DataGridView DGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Coode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn libellé;
-        private System.Windows.Forms.Label msg;
     }
 }

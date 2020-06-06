@@ -8,3 +8,4 @@ C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.ex
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.pdb
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.FMenu.resources
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Fservice.resources
+C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Femplyee.resources

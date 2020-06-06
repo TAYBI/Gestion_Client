@@ -40,5 +40,10 @@ namespace Gestion_Client
         {
             new Fservice().Show();
         }
+
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+            new Femplyee().Show();
+        }
     }
 }
