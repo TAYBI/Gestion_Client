@@ -1,7 +1,6 @@
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\bin\Debug\Gestion_Client.exe.config
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\bin\Debug\Gestion_Client.exe
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\bin\Debug\Gestion_Client.pdb
-C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.csprojResolveAssemblyReference.cache
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Properties.Resources.resources
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.csproj.GenerateResource.Cache
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.exe
@@ -9,3 +8,4 @@ C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.pd
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.FMenu.resources
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Fservice.resources
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Femplyee.resources
+C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.csprojResolveAssemblyReference.cache

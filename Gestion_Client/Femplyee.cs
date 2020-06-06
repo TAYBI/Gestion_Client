@@ -12,6 +12,20 @@ namespace Gestion_Client
 {
     public partial class Femplyee : Form
     {
+        Employe E;
+
+        public void actualise()
+        {
+            E = new Employe(FMenu.C);
+            E.lister();
+            DGV.DataSource = E.GetConnextion().dt;
+            //TxtCode.Text = "";
+            //TxtLibelle.Text = "";
+            //msg.Text = "";
+            //TxtCode.Select();
+
+        }
+
         public Femplyee()
         {
             InitializeComponent();
@@ -20,6 +34,11 @@ namespace Gestion_Client
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Femplyee_Load(object sender, EventArgs e)
+        {
+            actualise();
         }
     }
 }

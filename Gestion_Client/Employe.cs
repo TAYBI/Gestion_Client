@@ -59,27 +59,27 @@ namespace Gestion_Client
         }
 
         public int ajout(){
-            return con.executer("insert into Emplye values('"+matricule+ "','" + nom +"','" + prénom+"','"+date_naissance   + "','"+grade   + "',"+ echelle+",'"+ service.GetCode()+ "')");
+            return con.executer("insert into Employe values('"+matricule+ "','" + nom +"','" + prénom+"','"+date_naissance   + "','"+grade   + "',"+ echelle+",'"+ service.GetCode()+ "')");
         }
         public int supprimer()
         {
-            return    con.executer("delete from Emplye where Matricule='"+matricule+ "'");
+            return    con.executer("delete from Employe where Matricule='"+matricule+ "'");
         }
 
         public  int modifier(){
-            return con.executer("update Emplye set Nom='"+nom  +"', Prénom='"+prénom +"', Date_naissance='"+date_naissance+"',grade='"+grade+"', échelle="+echelle+", code_service='"+service.GetCode()+"' where Matricule='" + matricule+ "'");
+            return con.executer("update Employe set Nom='"+nom  +"', Prénom='"+prénom +"', Date_naissance='"+date_naissance+"',grade='"+grade+"', échelle="+echelle+", code_service='"+service.GetCode()+"' where Matricule='" + matricule+ "'");
         }
         
         public void lister(){
-            con.executer_liste_deconnecte("select  *from Emplye");
+            con.executer_liste_deconnecte("select * from Employe");
         }
         
         public void rechercher_matricule(){
-            con.executer_liste_deconnecte("select  * from Emplye where Matricule='"+matricule+"'");
+            con.executer_liste_deconnecte("select  * from Employe where Matricule='"+matricule+"'");
         }
         
         public void rechercher_nom(String nom_recherché){
-            con.executer_liste_deconnecte("select  * from Emplye where nom like'"+nom_recherché+ "%'");
+            con.executer_liste_deconnecte("select  * from Employe where nom like'"+nom_recherché+ "%'");
         }
     }
 }
