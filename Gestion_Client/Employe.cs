@@ -29,13 +29,15 @@ namespace Gestion_Client
             this.con = con;
         }
 
-        public Employe(String matricule, String nom, String prénom, DateTime date_naissance, String grade, int echelle, Service service, Connexion con)
+        public Employe(String matricule, String nom, String prénom, DateTime date_naissance, 
+            String grade, int echelle, Service service, Connexion con)
         {
             this.matricule = matricule;
             this.nom = nom;
             this.prénom = prénom;
             this.date_naissance = date_naissance;
             this.grade = grade;
+            this.echelle = echelle;
             this.service = service; ;
             this.con = con;
         }
@@ -59,7 +61,9 @@ namespace Gestion_Client
         }
 
         public int ajout(){
-            return con.executer("insert into Employe values('"+matricule+ "','" + nom +"','" + prénom+"','"+date_naissance   + "','"+grade   + "',"+ echelle+",'"+ service.GetCode()+ "')");
+            return con.executer("insert into Employe values('"+matricule+ "','" + nom +"','"
+                + prénom+"','"+date_naissance   + "','"+grade   + "',"+ echelle+",'"+
+                service.GetCode()+ "')");
         }
         public int supprimer()
         {
@@ -67,7 +71,9 @@ namespace Gestion_Client
         }
 
         public  int modifier(){
-            return con.executer("update Employe set Nom='"+nom  +"', Prénom='"+prénom +"', Date_naissance='"+date_naissance+"',grade='"+grade+"', échelle="+echelle+", code_service='"+service.GetCode()+"' where Matricule='" + matricule+ "'");
+            return con.executer("update Employe set Nom='"+nom  +"', Prénom='"+prénom +
+                                "', Date_naissance='"+date_naissance+"',grade='"+grade+"', échelle="+echelle+
+                                ", code_service='"+service.GetCode()+"' where Matricule='" + matricule+ "'");
         }
         
         public void lister(){
@@ -79,7 +85,7 @@ namespace Gestion_Client
         }
         
         public void rechercher_nom(String nom_recherché){
-            con.executer_liste_deconnecte("select  * from Employe where nom like'"+nom_recherché+ "%'");
+            con.executer_liste_deconnecte("select * from Employe where Nom like '%" + nom_recherché + "%'");
         }
     }
 }

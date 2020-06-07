@@ -57,10 +57,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.TxtRecherchNom = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TxtCodeService = new System.Windows.Forms.TextBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.TxtCodeService = new System.Windows.Forms.TextBox();
             this.msg = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -150,6 +150,7 @@
             this.TxtEchelle.Name = "TxtEchelle";
             this.TxtEchelle.Size = new System.Drawing.Size(134, 29);
             this.TxtEchelle.TabIndex = 29;
+            this.TxtEchelle.Leave += new System.EventHandler(this.TxtEchelle_Leave);
             // 
             // TxtGrade
             // 
@@ -219,6 +220,7 @@
             this.BtnSupprimer.TabIndex = 39;
             this.BtnSupprimer.Text = "Supprimer";
             this.BtnSupprimer.UseVisualStyleBackColor = false;
+            this.BtnSupprimer.Click += new System.EventHandler(this.BtnSupprimer_Click);
             // 
             // BtnModifier
             // 
@@ -230,6 +232,7 @@
             this.BtnModifier.TabIndex = 38;
             this.BtnModifier.Text = "Modifier";
             this.BtnModifier.UseVisualStyleBackColor = false;
+            this.BtnModifier.Click += new System.EventHandler(this.BtnModifier_Click);
             // 
             // button2
             // 
@@ -334,6 +337,8 @@
             this.TxtRecherchNom.Name = "TxtRecherchNom";
             this.TxtRecherchNom.Size = new System.Drawing.Size(134, 29);
             this.TxtRecherchNom.TabIndex = 42;
+            this.TxtRecherchNom.TextChanged += new System.EventHandler(this.TxtRecherchNom_TextChanged);
+            this.TxtRecherchNom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtRecherchNom_KeyDown);
             // 
             // groupBox1
             // 
@@ -361,6 +366,14 @@
             this.groupBox1.Size = new System.Drawing.Size(738, 206);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
+            // 
+            // TxtCodeService
+            // 
+            this.TxtCodeService.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCodeService.Location = new System.Drawing.Point(441, 121);
+            this.TxtCodeService.Name = "TxtCodeService";
+            this.TxtCodeService.Size = new System.Drawing.Size(134, 29);
+            this.TxtCodeService.TabIndex = 43;
             // 
             // shapeContainer1
             // 
@@ -391,15 +404,6 @@
             this.lineShape1.X2 = 586;
             this.lineShape1.Y1 = 6;
             this.lineShape1.Y2 = 169;
-            // 
-            // TxtCodeService
-            // 
-            this.TxtCodeService.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodeService.Location = new System.Drawing.Point(441, 121);
-            this.TxtCodeService.Name = "TxtCodeService";
-            this.TxtCodeService.ReadOnly = true;
-            this.TxtCodeService.Size = new System.Drawing.Size(134, 29);
-            this.TxtCodeService.TabIndex = 43;
             // 
             // msg
             // 

@@ -65,8 +65,15 @@ namespace Gestion_Client
 
 
 
-//ExecuteScalar is typically used when your query returns a single value. If it returns more, then the result is the first column of the first row. An example might be SELECT @@IDENTITY AS 'Identity'.
-//ExecuteReader is used for any result set with multiple rows/columns (e.g., SELECT col1, col2 from sometable).
-//ExecuteNonQuery is typically used for SQL statements without results (e.g., UPDATE, INSERT, etc.)
+
+        // ExecuteScalar:
+                //is typically used when your query returns a single value.
+                //If it returns more, then the result is the first column of the first row. 
+                //An example might be SELECT @@IDENTITY AS 'Identity'.
+        // ExecuteReader:
+                //is used for any result set with multiple rows/columns 
+                //(e.g., SELECT col1, col2 from sometable).
+        // ExecuteNonQuery:
+                //is typically used for SQL statements without results (e.g., UPDATE, INSERT, etc.)
     }
 }
