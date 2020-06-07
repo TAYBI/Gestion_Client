@@ -31,7 +31,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.TxtLibellefghf = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TctNom = new System.Windows.Forms.TextBox();
+            this.TxtNom = new System.Windows.Forms.TextBox();
             this.TxtMatricule = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,9 +47,6 @@
             this.BtnModifier = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.DGV = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.TxtRecherchNom = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.matricule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,10 +54,14 @@
             this.grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.echelle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.code_service = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TxtRecherchNom = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.TxtCodeService = new System.Windows.Forms.TextBox();
+            this.msg = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -95,13 +96,13 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Matricule";
             // 
-            // TctNom
+            // TxtNom
             // 
-            this.TctNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TctNom.Location = new System.Drawing.Point(154, 72);
-            this.TctNom.Name = "TctNom";
-            this.TctNom.Size = new System.Drawing.Size(134, 29);
-            this.TctNom.TabIndex = 21;
+            this.TxtNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNom.Location = new System.Drawing.Point(154, 72);
+            this.TxtNom.Name = "TxtNom";
+            this.TxtNom.Size = new System.Drawing.Size(134, 29);
+            this.TxtNom.TabIndex = 21;
             // 
             // TxtMatricule
             // 
@@ -110,6 +111,7 @@
             this.TxtMatricule.Name = "TxtMatricule";
             this.TxtMatricule.Size = new System.Drawing.Size(109, 29);
             this.TxtMatricule.TabIndex = 20;
+            this.TxtMatricule.Leave += new System.EventHandler(this.TxtMatricule_Leave);
             // 
             // label2
             // 
@@ -184,6 +186,8 @@
             this.TxtDateNaissance.Name = "TxtDateNaissance";
             this.TxtDateNaissance.Size = new System.Drawing.Size(134, 29);
             this.TxtDateNaissance.TabIndex = 33;
+            this.TxtDateNaissance.Enter += new System.EventHandler(this.TxtDateNaissance_Enter);
+            this.TxtDateNaissance.Leave += new System.EventHandler(this.TxtDateNaissance_Leave);
             // 
             // TxtPénom
             // 
@@ -203,6 +207,7 @@
             this.BtnAjouter.TabIndex = 40;
             this.BtnAjouter.Text = "Ajouter";
             this.BtnAjouter.UseVisualStyleBackColor = false;
+            this.BtnAjouter.Click += new System.EventHandler(this.BtnAjouter_Click);
             // 
             // BtnSupprimer
             // 
@@ -263,51 +268,6 @@
             this.DGV.Size = new System.Drawing.Size(738, 271);
             this.DGV.TabIndex = 41;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(217, 284);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 24);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Recherch par nom";
-            // 
-            // TxtRecherchNom
-            // 
-            this.TxtRecherchNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtRecherchNom.Location = new System.Drawing.Point(391, 279);
-            this.TxtRecherchNom.Name = "TxtRecherchNom";
-            this.TxtRecherchNom.Size = new System.Drawing.Size(134, 29);
-            this.TxtRecherchNom.TabIndex = 42;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.BtnAjouter);
-            this.groupBox1.Controls.Add(this.BtnSupprimer);
-            this.groupBox1.Controls.Add(this.BtnModifier);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.TxtDateNaissance);
-            this.groupBox1.Controls.Add(this.TxtPénom);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.TxtEchelle);
-            this.groupBox1.Controls.Add(this.TxtGrade);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.TxtLibellefghf);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.TctNom);
-            this.groupBox1.Controls.Add(this.TxtMatricule);
-            this.groupBox1.Controls.Add(this.shapeContainer1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 59);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(738, 206);
-            this.groupBox1.TabIndex = 44;
-            this.groupBox1.TabStop = false;
-            // 
             // matricule
             // 
             this.matricule.DataPropertyName = "Matricule";
@@ -357,15 +317,50 @@
             this.code_service.Name = "code_service";
             this.code_service.ReadOnly = true;
             // 
-            // comboBox1
+            // label4
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(441, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(134, 32);
-            this.comboBox1.TabIndex = 41;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(217, 284);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(168, 24);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "Recherch par nom";
+            // 
+            // TxtRecherchNom
+            // 
+            this.TxtRecherchNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRecherchNom.Location = new System.Drawing.Point(391, 279);
+            this.TxtRecherchNom.Name = "TxtRecherchNom";
+            this.TxtRecherchNom.Size = new System.Drawing.Size(134, 29);
+            this.TxtRecherchNom.TabIndex = 42;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.TxtCodeService);
+            this.groupBox1.Controls.Add(this.BtnAjouter);
+            this.groupBox1.Controls.Add(this.BtnSupprimer);
+            this.groupBox1.Controls.Add(this.BtnModifier);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.TxtDateNaissance);
+            this.groupBox1.Controls.Add(this.TxtPénom);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.TxtEchelle);
+            this.groupBox1.Controls.Add(this.TxtGrade);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.TxtLibellefghf);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.TxtNom);
+            this.groupBox1.Controls.Add(this.TxtMatricule);
+            this.groupBox1.Controls.Add(this.shapeContainer1);
+            this.groupBox1.Location = new System.Drawing.Point(13, 59);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(738, 206);
+            this.groupBox1.TabIndex = 44;
+            this.groupBox1.TabStop = false;
             // 
             // shapeContainer1
             // 
@@ -379,15 +374,6 @@
             this.shapeContainer1.TabIndex = 42;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.Color.Gainsboro;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 586;
-            this.lineShape1.X2 = 586;
-            this.lineShape1.Y1 = 6;
-            this.lineShape1.Y2 = 169;
-            // 
             // lineShape2
             // 
             this.lineShape2.BorderColor = System.Drawing.Color.Gainsboro;
@@ -397,12 +383,40 @@
             this.lineShape2.Y1 = 6;
             this.lineShape2.Y2 = 169;
             // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 586;
+            this.lineShape1.X2 = 586;
+            this.lineShape1.Y1 = 6;
+            this.lineShape1.Y2 = 169;
+            // 
+            // TxtCodeService
+            // 
+            this.TxtCodeService.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCodeService.Location = new System.Drawing.Point(441, 121);
+            this.TxtCodeService.Name = "TxtCodeService";
+            this.TxtCodeService.ReadOnly = true;
+            this.TxtCodeService.Size = new System.Drawing.Size(134, 29);
+            this.TxtCodeService.TabIndex = 43;
+            // 
+            // msg
+            // 
+            this.msg.AutoSize = true;
+            this.msg.ForeColor = System.Drawing.Color.Green;
+            this.msg.Location = new System.Drawing.Point(525, 43);
+            this.msg.Name = "msg";
+            this.msg.Size = new System.Drawing.Size(0, 13);
+            this.msg.TabIndex = 45;
+            // 
             // Femplyee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(763, 606);
+            this.Controls.Add(this.msg);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TxtRecherchNom);
@@ -428,7 +442,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label TxtLibellefghf;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TctNom;
+        private System.Windows.Forms.TextBox TxtNom;
         private System.Windows.Forms.TextBox TxtMatricule;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
@@ -454,9 +468,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn grade;
         private System.Windows.Forms.DataGridViewTextBoxColumn echelle;
         private System.Windows.Forms.DataGridViewTextBoxColumn code_service;
-        private System.Windows.Forms.ComboBox comboBox1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
+        private System.Windows.Forms.TextBox TxtCodeService;
+        private System.Windows.Forms.Label msg;
     }
 }

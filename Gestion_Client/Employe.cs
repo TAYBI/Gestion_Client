@@ -53,9 +53,9 @@ namespace Gestion_Client
         public Boolean existance_matricule()
         {
             if (con.executer_valeur("SELECT COUNT(*) FROM Employe WHERE Matricule = '"+matricule+"'") == "0")
-                return true;
-            else
                 return false;
+            else
+                return true;
         }
 
         public int ajout(){
