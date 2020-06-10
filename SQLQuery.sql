@@ -21,3 +21,5 @@ create table Conge (
 	Type_congé varchar(20),
 	Durée int
 )
+
+	select * from Conge

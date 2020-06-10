@@ -38,6 +38,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TxtConge = new System.Windows.Forms.TextBox();
             this.DGV = new System.Windows.Forms.DataGridView();
+            this.Coode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libellé = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type_congé = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hhgdfjgjshgfs = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.TxtDuree = new System.Windows.Forms.TextBox();
@@ -45,10 +49,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TxtMatricule = new System.Windows.Forms.ComboBox();
             this.msg = new System.Windows.Forms.Label();
-            this.Coode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.libellé = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type_congé = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -73,6 +73,7 @@
             this.BtnAjouter.TabIndex = 50;
             this.BtnAjouter.Text = "Ajouter";
             this.BtnAjouter.UseVisualStyleBackColor = false;
+            this.BtnAjouter.Click += new System.EventHandler(this.BtnAjouter_Click);
             // 
             // BtnSupprimer
             // 
@@ -84,6 +85,7 @@
             this.BtnSupprimer.TabIndex = 49;
             this.BtnSupprimer.Text = "Supprimer";
             this.BtnSupprimer.UseVisualStyleBackColor = false;
+            this.BtnSupprimer.Click += new System.EventHandler(this.BtnSupprimer_Click);
             // 
             // BtnModifier
             // 
@@ -95,6 +97,7 @@
             this.BtnModifier.TabIndex = 48;
             this.BtnModifier.Text = "Modifier";
             this.BtnModifier.UseVisualStyleBackColor = false;
+            this.BtnModifier.Click += new System.EventHandler(this.BtnModifier_Click);
             // 
             // button2
             // 
@@ -168,6 +171,34 @@
             this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGV.Size = new System.Drawing.Size(522, 186);
             this.DGV.TabIndex = 55;
+            // 
+            // Coode
+            // 
+            this.Coode.DataPropertyName = "Matricule";
+            this.Coode.HeaderText = "Matricule";
+            this.Coode.Name = "Coode";
+            this.Coode.ReadOnly = true;
+            // 
+            // libellé
+            // 
+            this.libellé.DataPropertyName = "Date_congé";
+            this.libellé.HeaderText = "Date_congé";
+            this.libellé.Name = "libellé";
+            this.libellé.ReadOnly = true;
+            // 
+            // Type_congé
+            // 
+            this.Type_congé.DataPropertyName = "Type_congé";
+            this.Type_congé.HeaderText = "Type_congé";
+            this.Type_congé.Name = "Type_congé";
+            this.Type_congé.ReadOnly = true;
+            // 
+            // Durée
+            // 
+            this.Durée.DataPropertyName = "Durée";
+            this.Durée.HeaderText = "Durée";
+            this.Durée.Name = "Durée";
+            this.Durée.ReadOnly = true;
             // 
             // hhgdfjgjshgfs
             // 
@@ -244,34 +275,6 @@
             this.msg.Name = "msg";
             this.msg.Size = new System.Drawing.Size(0, 13);
             this.msg.TabIndex = 61;
-            // 
-            // Coode
-            // 
-            this.Coode.DataPropertyName = "Matricule";
-            this.Coode.HeaderText = "Matricule";
-            this.Coode.Name = "Coode";
-            this.Coode.ReadOnly = true;
-            // 
-            // libellé
-            // 
-            this.libellé.DataPropertyName = "Date_congé";
-            this.libellé.HeaderText = "Date_congé";
-            this.libellé.Name = "libellé";
-            this.libellé.ReadOnly = true;
-            // 
-            // Type_congé
-            // 
-            this.Type_congé.DataPropertyName = "Type_congé";
-            this.Type_congé.HeaderText = "Type_congé";
-            this.Type_congé.Name = "Type_congé";
-            this.Type_congé.ReadOnly = true;
-            // 
-            // Durée
-            // 
-            this.Durée.DataPropertyName = "Durée";
-            this.Durée.HeaderText = "Durée";
-            this.Durée.Name = "Durée";
-            this.Durée.ReadOnly = true;
             // 
             // Fconge
             // 
