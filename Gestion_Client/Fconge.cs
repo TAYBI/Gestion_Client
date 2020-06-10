@@ -124,5 +124,60 @@ namespace Gestion_Client
             actualiser();
             msg_success("modification effectué");
         }
+
+        private void TxtMatricule_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (TxtMatricule.Text != "" && TxtConge.Text != "")
+            {
+                E = new Employe(TxtMatricule.Text, FMenu.C);
+                conge = new Conge(E, DateTime.Parse(TxtConge.Text), FMenu.C);
+                if (conge.existance_matricule_date() == false)
+                {
+                    BtnAjouter.Enabled = true;
+                    BtnSupprimer.Enabled = false;
+                    BtnModifier.Enabled = false;
+                    TxtType.Text = "";
+                    TxtDuree.Text = "";
+                }
+                else
+                {
+                    BtnAjouter.Enabled = false;
+                    BtnSupprimer.Enabled = true;
+                    BtnModifier.Enabled = true;
+                    conge.recherch_matricule_date();
+                    TxtConge.Text = conge.GetConnextion().dt.Rows[0][1].ToString();
+                    TxtType.Text = conge.GetConnextion().dt.Rows[0][2].ToString();
+                    TxtDuree.Text = conge.GetConnextion().dt.Rows[0][3].ToString();
+                }
+                TxtType.Select();
+            }
+        }
+
+        private void TxtConge_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                DateTime.Parse(TxtConge.Text);
+                msg.Text = "";
+            }
+            catch (Exception m) {
+                msg_error("Date non valide");
+                TxtConge.Select();
+            }
+        }
+
+        private void TxtDuree_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                int.Parse(TxtDuree.Text);
+                msg.Text = "";
+            }
+            catch (Exception m)
+            {
+                msg_error("Duree non valide");
+                TxtDuree.Select();
+            }
+        }
     }
 }

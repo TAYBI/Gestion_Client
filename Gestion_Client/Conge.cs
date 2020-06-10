@@ -43,7 +43,7 @@ namespace Gestion_Client
 
         public Boolean existance_matricule_date()
         {
-            if (con.executer_valeur("SELECT COUNT(*)  FROM Conge WHERE Matricule = '" +
+            if (con.executer_valeur("SELECT COUNT(*) FROM Conge WHERE Matricule = '" +
                 employe.getMatricule() + "' AND Date_congé = '" + date_conge+ "'") == "0")
                 return false;
             return true;
@@ -57,7 +57,8 @@ namespace Gestion_Client
 
         public int modifier()
         {
-            return con.executer("UPDATE Conge set Durée = " + dure + " WHERE Matricule = '" +
+            return con.executer("UPDATE Conge set Durée = " + dure + ",Type_congé = '"+
+                type+"'  WHERE Matricule = '" +
                 employe.getMatricule() + "' AND Date_congé =  '" + date_conge + "'");
         }
 
@@ -72,7 +73,7 @@ namespace Gestion_Client
             con.executer_liste_deconnecte("select * from Conge");
         }
 
-        public void recherch_date()
+        public void recherch_matricule_date()
         {
             con.executer_liste_deconnecte("select * from Conge WHERE Matricule = '" +
                 employe.getMatricule() + "' AND Date_congé =  '" + date_conge + "'");

@@ -151,6 +151,7 @@
             this.TxtConge.Name = "TxtConge";
             this.TxtConge.Size = new System.Drawing.Size(171, 29);
             this.TxtConge.TabIndex = 52;
+            this.TxtConge.Leave += new System.EventHandler(this.TxtConge_Leave);
             // 
             // DGV
             // 
@@ -227,6 +228,7 @@
             this.TxtDuree.Name = "TxtDuree";
             this.TxtDuree.Size = new System.Drawing.Size(171, 29);
             this.TxtDuree.TabIndex = 57;
+            this.TxtDuree.Leave += new System.EventHandler(this.TxtDuree_Leave);
             // 
             // TxtType
             // 
@@ -266,6 +268,7 @@
             this.TxtMatricule.Name = "TxtMatricule";
             this.TxtMatricule.Size = new System.Drawing.Size(171, 32);
             this.TxtMatricule.TabIndex = 60;
+            this.TxtMatricule.SelectedIndexChanged += new System.EventHandler(this.TxtMatricule_SelectedIndexChanged);
             // 
             // msg
             // 
