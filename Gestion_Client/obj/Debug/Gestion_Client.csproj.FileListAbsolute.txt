@@ -9,3 +9,4 @@ C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.FM
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Fservice.resources
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Femplyee.resources
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.csprojResolveAssemblyReference.cache
+C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Fconge.resources

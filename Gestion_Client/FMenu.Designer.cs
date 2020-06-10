@@ -92,6 +92,7 @@
             this.checkBox7.TabIndex = 14;
             this.checkBox7.Text = "Gestion des conges";
             this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox8
             // 

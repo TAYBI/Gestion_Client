@@ -47,7 +47,7 @@ namespace Gestion_Client
             return con;
         }
 
-        public String Getmmatiricule()
+        public String getMatricule()
         {
             return matricule;
         }
