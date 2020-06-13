@@ -217,7 +217,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(477, 370);
             this.Name = "Fservice";
-            this.Text = "Fservice";
+            this.Text = "Service";
             this.Load += new System.EventHandler(this.Fservice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.ResumeLayout(false);

@@ -294,7 +294,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(566, 530);
             this.Name = "Fconge";
-            this.Text = "Fconge";
+            this.Text = "Conge";
             this.Load += new System.EventHandler(this.Fconge_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.groupBox1.ResumeLayout(false);

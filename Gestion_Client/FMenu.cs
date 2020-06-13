@@ -50,5 +50,10 @@ namespace Gestion_Client
         {
             new Fconge().Show();
         }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            new FEdition().Show();
+        }
     }
 }

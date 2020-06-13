@@ -29,6 +29,12 @@ namespace Gestion_Client
             this.con = con;
         }
 
+        public Employe(Service service, Connexion con)
+        {
+            this.service = service;
+            this.con = con;
+        }
+
         public Employe(String matricule, String nom, String prénom, DateTime date_naissance, 
             String grade, int echelle, Service service, Connexion con)
         {
@@ -79,13 +85,24 @@ namespace Gestion_Client
         public void lister(){
             con.executer_liste_deconnecte("select * from Employe");
         }
-        
-        public void rechercher_matricule(){
-            con.executer_liste_deconnecte("select  * from Employe where Matricule='"+matricule+"'");
+
+        public void rechercher_matricule()
+        {
+            con.executer_liste_deconnecte("select  * from Employe where Matricule='" + matricule + "'");
         }
-        
+
         public void rechercher_nom(String nom_recherché){
             con.executer_liste_deconnecte("select * from Employe where Nom like '%" + nom_recherché + "%'");
+        }
+
+        /*------------------*/
+        public void employe_service()
+        {
+            con.executer_liste_deconnecte("select Matricule, Nom, Prénom, Date_naissance, grade, échelle from Employe where code_service ='" + service.GetCode() + "'");
+        }
+
+        public String nbre_employé_service(){
+            return con.executer_valeur("select count(*) from Employe where code_service='" + service.GetCode() + "'");
         }
     }
 }

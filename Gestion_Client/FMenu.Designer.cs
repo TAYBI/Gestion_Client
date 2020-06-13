@@ -81,6 +81,7 @@
             this.checkBox6.TabIndex = 13;
             this.checkBox6.Text = "Edition";
             this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -133,7 +134,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(316, 331);
             this.Name = "FMenu";
-            this.Text = "Form1";
+            this.Text = "Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -145,7 +145,8 @@ namespace Gestion_Client
                     BtnSupprimer.Enabled = true;
                     BtnModifier.Enabled = true;
                     conge.recherch_matricule_date();
-                    TxtConge.Text = conge.GetConnextion().dt.Rows[0][1].ToString();
+                    String date  = conge.GetConnextion().dt.Rows[0][1].ToString();
+                    TxtConge.Text =  DateTime.Parse(date).ToShortDateString() ;
                     TxtType.Text = conge.GetConnextion().dt.Rows[0][2].ToString();
                     TxtDuree.Text = conge.GetConnextion().dt.Rows[0][3].ToString();
                 }

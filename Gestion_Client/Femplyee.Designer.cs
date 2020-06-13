@@ -391,8 +391,8 @@
             // 
             this.lineShape2.BorderColor = System.Drawing.Color.Gainsboro;
             this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 299;
-            this.lineShape2.X2 = 299;
+            this.lineShape2.X1 = 300;
+            this.lineShape2.X2 = 300;
             this.lineShape2.Y1 = 6;
             this.lineShape2.Y2 = 169;
             // 
@@ -400,8 +400,8 @@
             // 
             this.lineShape1.BorderColor = System.Drawing.Color.Gainsboro;
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 586;
-            this.lineShape1.X2 = 586;
+            this.lineShape1.X1 = 587;
+            this.lineShape1.X2 = 587;
             this.lineShape1.Y1 = 6;
             this.lineShape1.Y2 = 169;
             // 
@@ -431,7 +431,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(779, 644);
             this.Name = "Femplyee";
-            this.Text = "Femplyee";
+            this.Text = "Emplyee";
             this.Load += new System.EventHandler(this.Femplyee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.groupBox1.ResumeLayout(false);
