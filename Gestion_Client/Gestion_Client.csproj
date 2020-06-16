@@ -55,6 +55,12 @@
     <Compile Include="Fconge.Designer.cs">
       <DependentUpon>Fconge.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fconge_employe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fconge_employe.Designer.cs">
+      <DependentUpon>Fconge_employe.cs</DependentUpon>
+    </Compile>
     <Compile Include="FEdition.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="Service.cs" />
     <EmbeddedResource Include="Fconge.resx">
       <DependentUpon>Fconge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fconge_employe.resx">
+      <DependentUpon>Fconge_employe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FEdition.resx">
       <DependentUpon>FEdition.cs</DependentUpon>
