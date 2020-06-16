@@ -47,6 +47,7 @@
             this.checkBox8.TabIndex = 21;
             this.checkBox8.Text = "Conge par periode";
             this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox7
             // 

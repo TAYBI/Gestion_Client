@@ -31,5 +31,10 @@ namespace Gestion_Client
         {
             new Fconge_employe().Show();
         }
+
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+            new Fconges_periode().Show();
+        }
     }
 }

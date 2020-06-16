@@ -27,6 +27,12 @@ namespace Gestion_Client
             this.con = c;
         }
 
+        public Conge(Employe emp, Connexion c)
+        {
+            this.employe = emp;
+            this.con = c;
+        }
+
         public Conge(Employe emp, DateTime date, String type, int dure,  Connexion c)
         {
             this.employe = emp;
@@ -77,6 +83,19 @@ namespace Gestion_Client
         {
             con.executer_liste_deconnecte("select * from Conge WHERE Matricule = '" +
                 employe.getMatricule() + "' AND Date_congé =  '" + date_conge + "'");
+        }
+
+        /**************************************************************************/
+        public void conge_employe()
+        {
+            con.executer_liste_deconnecte("SELECT Date_congé, Type_congé, Durée FROM Conge WHERE Matricule = '"+
+                employe.getMatricule()+"'");
+        }
+
+        public String duree_totlal_eploye() 
+        {
+            return con.executer_valeur("SELECT SUM(Durée) FROM Conge WHERE Matricule = '" +
+                employe.getMatricule() + "'");
         }
     }
 }

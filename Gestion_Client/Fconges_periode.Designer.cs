@@ -1,6 +1,6 @@
 ﻿namespace Gestion_Client
 {
-    partial class Fconge_employe
+    partial class Fconges_periode
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.DGV = new System.Windows.Forms.DataGridView();
+            this.libellé = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type_congé = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtDuree = new System.Windows.Forms.TextBox();
@@ -36,13 +40,49 @@
             this.BtnFermer = new System.Windows.Forms.Button();
             this.BtnEtat = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.DGV = new System.Windows.Forms.DataGridView();
-            this.libellé = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type_congé = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // DGV
+            // 
+            this.DGV.AllowUserToAddRows = false;
+            this.DGV.AllowUserToDeleteRows = false;
+            this.DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.libellé,
+            this.Type_congé,
+            this.Durée});
+            this.DGV.Location = new System.Drawing.Point(14, 167);
+            this.DGV.Name = "DGV";
+            this.DGV.ReadOnly = true;
+            this.DGV.RowHeadersVisible = false;
+            this.DGV.RowHeadersWidth = 50;
+            this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV.Size = new System.Drawing.Size(496, 220);
+            this.DGV.TabIndex = 72;
+            // 
+            // libellé
+            // 
+            this.libellé.DataPropertyName = "Date_congé";
+            this.libellé.HeaderText = "Date_congé";
+            this.libellé.Name = "libellé";
+            this.libellé.ReadOnly = true;
+            // 
+            // Type_congé
+            // 
+            this.Type_congé.DataPropertyName = "Type_congé";
+            this.Type_congé.HeaderText = "Type_congé";
+            this.Type_congé.Name = "Type_congé";
+            this.Type_congé.ReadOnly = true;
+            // 
+            // Durée
+            // 
+            this.Durée.DataPropertyName = "Durée";
+            this.Durée.HeaderText = "Durée";
+            this.Durée.Name = "Durée";
+            this.Durée.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -52,10 +92,10 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.BtnFermer);
             this.groupBox1.Controls.Add(this.BtnEtat);
-            this.groupBox1.Location = new System.Drawing.Point(12, 50);
+            this.groupBox1.Location = new System.Drawing.Point(14, 49);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(496, 112);
-            this.groupBox1.TabIndex = 71;
+            this.groupBox1.TabIndex = 74;
             this.groupBox1.TabStop = false;
             // 
             // label2
@@ -86,7 +126,6 @@
             this.TxtMatricule.Name = "TxtMatricule";
             this.TxtMatricule.Size = new System.Drawing.Size(171, 32);
             this.TxtMatricule.TabIndex = 64;
-            this.TxtMatricule.SelectedIndexChanged += new System.EventHandler(this.TxtMatricule_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -110,7 +149,6 @@
             this.BtnFermer.TabIndex = 62;
             this.BtnFermer.Text = "Fermer";
             this.BtnFermer.UseVisualStyleBackColor = false;
-            this.BtnFermer.Click += new System.EventHandler(this.BtnFermer_Click);
             // 
             // BtnEtat
             // 
@@ -127,67 +165,26 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 10);
+            this.label4.Location = new System.Drawing.Point(32, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(456, 37);
-            this.label4.TabIndex = 69;
-            this.label4.Text = "Liste des congés par employés";
+            this.label4.Size = new System.Drawing.Size(427, 37);
+            this.label4.TabIndex = 73;
+            this.label4.Text = "Liste des congés par période";
             // 
-            // DGV
-            // 
-            this.DGV.AllowUserToAddRows = false;
-            this.DGV.AllowUserToDeleteRows = false;
-            this.DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.libellé,
-            this.Type_congé,
-            this.Durée});
-            this.DGV.Location = new System.Drawing.Point(12, 168);
-            this.DGV.Name = "DGV";
-            this.DGV.ReadOnly = true;
-            this.DGV.RowHeadersVisible = false;
-            this.DGV.RowHeadersWidth = 50;
-            this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV.Size = new System.Drawing.Size(496, 220);
-            this.DGV.TabIndex = 68;
-            // 
-            // libellé
-            // 
-            this.libellé.DataPropertyName = "Date_congé";
-            this.libellé.HeaderText = "Date_congé";
-            this.libellé.Name = "libellé";
-            this.libellé.ReadOnly = true;
-            // 
-            // Type_congé
-            // 
-            this.Type_congé.DataPropertyName = "Type_congé";
-            this.Type_congé.HeaderText = "Type_congé";
-            this.Type_congé.Name = "Type_congé";
-            this.Type_congé.ReadOnly = true;
-            // 
-            // Durée
-            // 
-            this.Durée.DataPropertyName = "Durée";
-            this.Durée.HeaderText = "Durée";
-            this.Durée.Name = "Durée";
-            this.Durée.ReadOnly = true;
-            // 
-            // Fconge_employe
+            // Fconges_periode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(522, 400);
+            this.ClientSize = new System.Drawing.Size(522, 404);
             this.Controls.Add(this.DGV);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
-            this.Name = "Fconge_employe";
-            this.Text = "Congé par employé";
-            this.Load += new System.EventHandler(this.Fconge_employe_Load);
+            this.Name = "Fconges_periode";
+            this.Text = "Congé par période";
+            ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,6 +192,10 @@
 
         #endregion
 
+        private System.Windows.Forms.DataGridView DGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn libellé;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type_congé;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Durée;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtDuree;
@@ -203,10 +204,5 @@
         private System.Windows.Forms.Button BtnFermer;
         private System.Windows.Forms.Button BtnEtat;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView DGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn libellé;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type_congé;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Durée;
-
     }
 }

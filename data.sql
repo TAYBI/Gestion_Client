@@ -19,16 +19,6 @@ insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, cod
 insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (7, 'Bree', 'Godar', '10/10/1991', 'nulla nisl', 'pellentesque', 8);
 insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (8, 'Benjy', 'Furzer', '9/4/2004', 'dui maecenas', 'ipsum', 9);
 insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (9, 'Rayner', 'MacConnulty', '11/9/2001', 'quis turpis', 'nulla', 2);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (10, 'Jeannette', 'Piff', '8/13/1996', 'at', 'faucibus', 2);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (11, 'Homer', 'D''Hooge', '5/14/2005', 'lorem', 'ipsum', 4);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (12, 'Sly', 'Lavelle', '12/23/2003', 'mauris', 'eget', 5);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (13, 'Gates', 'Madgwick', '12/6/1991', 'pede', 'luctus', 2);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (14, 'Mady', 'Ziemens', '1/1/2004', 'molestie lorem', 'at', 4);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (15, 'Pebrook', 'Fowley', '12/15/1997', 'ornare consequat', 'interdum', 4);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (16, 'Rivi', 'Abela', '11/16/1996', 'dapibus', 'bibendum', 5);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (17, 'Corliss', 'Umfrey', '10/19/1997', 'praesent lectus', 'volutpat', 7);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (18, 'Basilio', 'Culverhouse', '6/25/2000', 'quam', 'ligula', 6);
-insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (19, 'Ole', 'Mercey', '9/2/1996', 'quis libero', 'morbi', 4);
 insert into Employe (Matricule, Nom, Prénom, Date_naissance, grade, échelle, code_service) values (20, 'Ritchie', 'O'' Mahony', '9/6/1999', 'neque', 'luctus', 7);
 
 

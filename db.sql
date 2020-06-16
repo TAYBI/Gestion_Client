@@ -1,4 +1,5 @@
 create database Gestion_Employe
+drop database Gestion_Employe
 
 create table Service (
 	Code varchar(20) primary key,
