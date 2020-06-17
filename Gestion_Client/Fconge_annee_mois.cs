@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace Gestion_Client
 {
-    public partial class Fstatistique_type : Form
+    public partial class Fconge_annee_mois : Form
     {
-        public Fstatistique_type()
+        public Fconge_annee_mois()
         {
             InitializeComponent();
         }
 
         private void BtnFermer_Click(object sender, EventArgs e)
         {
-            this.Close();   
-        }
-
-        private void Fstatistique_type_Load(object sender, EventArgs e)
-        {
-            Conge C = new Conge(FMenu.C);
-            C.statistique_type();
-            DGV.DataSource = C.GetConnextion().dt;
+            this.Close();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Gestion_Client
 {
-    partial class Fstatistique_type
+    partial class Fconge_annee_mois
     {
         /// <summary>
         /// Required designer variable.
@@ -35,9 +35,6 @@
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Coode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.libellé = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type_congé = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,11 +42,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(115, 9);
+            this.label4.Location = new System.Drawing.Point(47, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(290, 37);
-            this.label4.TabIndex = 78;
-            this.label4.Text = "Statistique par type";
+            this.label4.Size = new System.Drawing.Size(329, 74);
+            this.label4.TabIndex = 82;
+            this.label4.Text = "Durée des congés \r\npar année et par mois\r\n";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BtnFermer
             // 
@@ -57,10 +55,10 @@
             this.BtnFermer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFermer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnFermer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnFermer.Location = new System.Drawing.Point(422, 58);
+            this.BtnFermer.Location = new System.Drawing.Point(324, 109);
             this.BtnFermer.Name = "BtnFermer";
             this.BtnFermer.Size = new System.Drawing.Size(91, 37);
-            this.BtnFermer.TabIndex = 77;
+            this.BtnFermer.TabIndex = 81;
             this.BtnFermer.Text = "Fermer";
             this.BtnFermer.UseVisualStyleBackColor = false;
             this.BtnFermer.Click += new System.EventHandler(this.BtnFermer_Click);
@@ -69,10 +67,10 @@
             // 
             this.BtnEtat.BackColor = System.Drawing.Color.White;
             this.BtnEtat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEtat.Location = new System.Drawing.Point(12, 58);
+            this.BtnEtat.Location = new System.Drawing.Point(12, 109);
             this.BtnEtat.Name = "BtnEtat";
             this.BtnEtat.Size = new System.Drawing.Size(91, 37);
-            this.BtnEtat.TabIndex = 76;
+            this.BtnEtat.TabIndex = 80;
             this.BtnEtat.Text = "Etat";
             this.BtnEtat.UseVisualStyleBackColor = false;
             // 
@@ -85,78 +83,50 @@
             this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Type,
             this.Nombre,
-            this.Coode,
-            this.libellé,
-            this.Type_congé,
-            this.Durée});
-            this.DGV.Location = new System.Drawing.Point(12, 110);
+            this.Coode});
+            this.DGV.Location = new System.Drawing.Point(12, 152);
             this.DGV.Name = "DGV";
             this.DGV.ReadOnly = true;
             this.DGV.RowHeadersVisible = false;
             this.DGV.RowHeadersWidth = 50;
             this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV.Size = new System.Drawing.Size(501, 230);
-            this.DGV.TabIndex = 79;
+            this.DGV.Size = new System.Drawing.Size(403, 231);
+            this.DGV.TabIndex = 83;
             // 
             // Type
             // 
-            this.Type.DataPropertyName = "Type_congé";
-            this.Type.HeaderText = "Type";
+            this.Type.HeaderText = "Mois";
             this.Type.Name = "Type";
             this.Type.ReadOnly = true;
             // 
             // Nombre
             // 
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.HeaderText = "Année";
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
             // 
             // Coode
             // 
-            this.Coode.DataPropertyName = "Minimum";
-            this.Coode.HeaderText = "Minimum";
+            this.Coode.HeaderText = "Durée totale";
             this.Coode.Name = "Coode";
             this.Coode.ReadOnly = true;
             // 
-            // libellé
-            // 
-            this.libellé.DataPropertyName = "Maximum";
-            this.libellé.HeaderText = "Maximinum";
-            this.libellé.Name = "libellé";
-            this.libellé.ReadOnly = true;
-            // 
-            // Type_congé
-            // 
-            this.Type_congé.DataPropertyName = "Moyenne";
-            this.Type_congé.HeaderText = "Moyenne";
-            this.Type_congé.Name = "Type_congé";
-            this.Type_congé.ReadOnly = true;
-            // 
-            // Durée
-            // 
-            this.Durée.DataPropertyName = "Total";
-            this.Durée.HeaderText = "Total";
-            this.Durée.Name = "Durée";
-            this.Durée.ReadOnly = true;
-            // 
-            // Fstatistique_type
+            // Fconge_annee_mois
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(525, 352);
+            this.ClientSize = new System.Drawing.Size(427, 395);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BtnFermer);
             this.Controls.Add(this.BtnEtat);
             this.Controls.Add(this.DGV);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(541, 390);
+            this.MaximumSize = new System.Drawing.Size(443, 433);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(541, 390);
-            this.Name = "Fstatistique_type";
-            this.Text = "Statistique type";
-            this.Load += new System.EventHandler(this.Fstatistique_type_Load);
+            this.MinimumSize = new System.Drawing.Size(443, 433);
+            this.Name = "Fconge_annee_mois";
+            this.Text = "Congé par année et par mois";
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,8 +142,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Coode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn libellé;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type_congé;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Durée;
     }
 }

@@ -71,6 +71,7 @@
             this.checkBox6.TabIndex = 19;
             this.checkBox6.Text = "Conge par anne et par mois";
             this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // label3
             // 

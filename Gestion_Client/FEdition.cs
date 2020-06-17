@@ -41,5 +41,10 @@ namespace Gestion_Client
         {
             new Fstatistique_type().Show();
         }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            new Fconge_annee_mois().Show();
+        }
     }
 }
