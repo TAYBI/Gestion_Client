@@ -6,5 +6,11 @@ AS
  GROUP BY Type_congé
 
 
+CREATE VIEW durree_total_annee_mois
+AS
+ SELECT DATEPART(yy, Date_congé) as Annee, DATEPART(mm, Date_congé) as Mois, SUM(Durée) as Total
+ FROM Conge
+ GROUP BY Type_congé
 
-SELECT * FROM statistique_par_type
+
+SELECT * FROM durre_total_anne_moi

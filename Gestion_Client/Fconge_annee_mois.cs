@@ -21,5 +21,12 @@ namespace Gestion_Client
         {
             this.Close();
         }
+
+        private void Fconge_annee_mois_Load(object sender, EventArgs e)
+        {
+            Conge C = new Conge(FMenu.C);
+            C.statistique_durree_annee_mois();
+            DGV.DataSource = C.GetConnextion().dt;
+        }
     }
 }

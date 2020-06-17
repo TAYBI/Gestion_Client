@@ -32,8 +32,8 @@
             this.BtnFermer = new System.Windows.Forms.Button();
             this.BtnEtat = new System.Windows.Forms.Button();
             this.DGV = new System.Windows.Forms.DataGridView();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Coode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.SuspendLayout();
@@ -81,8 +81,8 @@
             this.DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Type,
             this.Nombre,
+            this.Type,
             this.Coode});
             this.DGV.Location = new System.Drawing.Point(12, 152);
             this.DGV.Name = "DGV";
@@ -93,20 +93,23 @@
             this.DGV.Size = new System.Drawing.Size(403, 231);
             this.DGV.TabIndex = 83;
             // 
-            // Type
-            // 
-            this.Type.HeaderText = "Mois";
-            this.Type.Name = "Type";
-            this.Type.ReadOnly = true;
-            // 
             // Nombre
             // 
+            this.Nombre.DataPropertyName = "Annee";
             this.Nombre.HeaderText = "Année";
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
             // 
+            // Type
+            // 
+            this.Type.DataPropertyName = "Mois";
+            this.Type.HeaderText = "Mois";
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
             // Coode
             // 
+            this.Coode.DataPropertyName = "Total";
             this.Coode.HeaderText = "Durée totale";
             this.Coode.Name = "Coode";
             this.Coode.ReadOnly = true;
@@ -127,6 +130,7 @@
             this.MinimumSize = new System.Drawing.Size(443, 433);
             this.Name = "Fconge_annee_mois";
             this.Text = "Congé par année et par mois";
+            this.Load += new System.EventHandler(this.Fconge_annee_mois_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -139,8 +143,8 @@
         private System.Windows.Forms.Button BtnFermer;
         private System.Windows.Forms.Button BtnEtat;
         private System.Windows.Forms.DataGridView DGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn Coode;
     }
 }

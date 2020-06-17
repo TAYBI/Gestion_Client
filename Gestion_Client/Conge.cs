@@ -104,8 +104,14 @@ namespace Gestion_Client
                 + d1 + "' AND '" + d2 + "'");
         }
 
-        public void statistique_type() {
+        public void statistique_type()
+        {
             con.executer_liste_deconnecte("SELECT * FROM statistique_par_type");
+        }
+
+        public void statistique_durree_annee_mois()
+        {
+            con.executer_liste_deconnecte("SELECT * FROM durree_total_annee_mois");
         }
     }
 }
