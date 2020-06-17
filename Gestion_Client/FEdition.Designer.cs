@@ -59,6 +59,7 @@
             this.checkBox7.TabIndex = 20;
             this.checkBox7.Text = "Statistique par type";
             this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox6
             // 

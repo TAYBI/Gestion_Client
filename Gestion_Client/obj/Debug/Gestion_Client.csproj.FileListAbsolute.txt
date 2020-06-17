@@ -13,3 +13,4 @@ C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Fc
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.FEdition.resources
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Femloye_service.resources
 C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Fconge_employe.resources
+C:\Users\Bilal\Desktop\Gestion_Client\Gestion_Client\obj\Debug\Gestion_Client.Fconges_periode.resources

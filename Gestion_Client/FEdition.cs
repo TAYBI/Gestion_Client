@@ -36,5 +36,10 @@ namespace Gestion_Client
         {
             new Fconges_periode().Show();
         }
+
+        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        {
+            new Fstatistique_type().Show();
+        }
     }
 }

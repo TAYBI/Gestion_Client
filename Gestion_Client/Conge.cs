@@ -92,10 +92,16 @@ namespace Gestion_Client
                 employe.getMatricule()+"'");
         }
 
-        public String duree_totlal_eploye() 
+        public String duree_totlal_eploye()
         {
             return con.executer_valeur("SELECT SUM(Durée) FROM Conge WHERE Matricule = '" +
                 employe.getMatricule() + "'");
+        }
+
+        public void conge_periode(String d1,String d2) 
+        {
+            con.executer_liste_deconnecte("SELECT * FROM Conge WHERE Date_congé BETWEEN '" 
+                + d1 + "' AND '" + d2 + "'");
         }
     }
 }
