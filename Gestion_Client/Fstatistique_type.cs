@@ -28,5 +28,10 @@ namespace Gestion_Client
             C.statistique_type();
             DGV.DataSource = C.GetConnextion().dt;
         }
+
+        private void BtnEtat_Click(object sender, EventArgs e)
+        {
+            new Fetat_statistique_par_type().Show();
+        }
     }
 }

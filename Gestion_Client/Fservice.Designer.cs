@@ -144,6 +144,7 @@
             this.BtnEtat.TabIndex = 9;
             this.BtnEtat.Text = "Etat";
             this.BtnEtat.UseVisualStyleBackColor = false;
+            this.BtnEtat.Click += new System.EventHandler(this.BtnEtat_Click);
             // 
             // BtnAjouter
             // 

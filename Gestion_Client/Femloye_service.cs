@@ -41,5 +41,10 @@ namespace Gestion_Client
                 TxtNombre.Text = E.nbre_employé_service(); ;
             }
         }
+
+        private void BtnEtat_Click(object sender, EventArgs e)
+        {
+            new Fetat_employe_service().Show();
+        }
     }
 }

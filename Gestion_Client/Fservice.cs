@@ -122,5 +122,10 @@ namespace Gestion_Client
             msg.ForeColor = System.Drawing.Color.Green;
             msg.Text = "suppression  effectué";
         }
+
+        private void BtnEtat_Click(object sender, EventArgs e)
+        {
+            new Fetat_service().Show();
+        }
     }
 }
